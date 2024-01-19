@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders and Backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            border: 4px solid green;
+            height: 100px;
+            width: 455px;
+            /* border-color: green;
+            border-style: solid;
+            border-width: 4px; */
+            border-radius: 8px;
+        }
+        #secondPara{
+            background-color: rgb(58,243,98);
+            height: 100px;
+            width: 455px;
+            border-top: 4px solid violet;
+            border-bottom: 4px solid rgb(82, 0, 82);
+            border-right: 4px solid rgb(15, 102, 105);
+            border-left: 4px solid rgb(6, 167, 216);
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        #thirdPara{
+            height: 200px;
+            width: 455px;
+            background-image: url(https://www.codewithharry.com/img/logo-blue.png);
+            border: 2px solid red;
+            background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat on x and y-axis*/
+            background-position: center left;
+        }
+    </style>
+</head> 
+<body>
+    <h3>This is heading</h3>
+    <p id="firstPara">This is a paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondPara">This is another paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdPara">This is yet another paragraph</p>
+</body>
+</html>

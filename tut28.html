@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialize the container as the flex box  */
+            display: flex;
+
+
+            /* Flex Properties for flex container */
+            /* flex-direction: row; /*Default Value of flex direction is row */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            /* flex-flow: row-reverse wrap; */
+/* 
+            flex-wrap: nowrap;
+            Default value for flex-wrap */
+
+           
+            /* Justify content in horizontal direction  */
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+            /* Justify content in vertical direction 
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch; */
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* order: 3; */
+
+            /* flex-grow: 3;
+            flex-shrink: 1; */
+            /* when flex direction is set to flex-basis; then will control width   */
+            /* flex-direction: column; */
+        }
+        #item-2{
+            /* order: 2;
+            flex-grow: 4;*/
+            flex-basis: 160px;
+            /* flex-shrink: 2; */
+        } 
+        #item-3{
+            /* order: 1; */
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

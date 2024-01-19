@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .box {
+            font-size: 72px;
+            text-align: center;
+            background-color: grey;
+            color: white;
+            display: none;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: orange;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: purple;
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Lean CSS in Urdu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, perspiciatis maiores cumque animi dolorem
+                error. Mollitia, magni aut. Iste deserunt veniam sint eos expedita optio aperiam a ducimus similique!
+                Saepe rerum hic, commodi voluptas suscipit dolorem inventore, dolores, dolor harum impedit adipisci.
+                Molestias, impedit delectus aperiam laudantium nihil deserunt quibusdam aliquid obcaecati placeat
+                consectetur minima sed maiores. Totam commodi rem accusamus, error impedit mollitia odio ipsum laborum
+                hic minus ab exercitationem itaque officiis blanditiis cupiditate. Atque odio, distinctio, eum quod
+                dolores id consectetur, iure cumque expedita animi assumenda nihil doloribus fuga consequuntur sapiente
+                et exercitationem. Minima omnis ratione molestiae dolorem, minus velit atque veniam accusantium a
+                consequatur in, natus quis hic odio provident excepturi voluptatem ducimus eaque porro. Sapiente
+                possimus voluptatem temporibus.</p>        
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright Code with Abdullah 2023</footer>
+</body>
+
+</html>

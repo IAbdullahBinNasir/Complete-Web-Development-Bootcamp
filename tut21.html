@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&family=Noto+Sans+Shavian&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        h1{
+            margin: auto;
+            width: 455px;
+            
+
+        }
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(243, 231, 220);
+            margin: auto;
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(223, 185, 185);
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            clear: left;
+            width: 100%;
+
+        }
+        p, h3{
+            text-align: right;
+            text-align: left;
+            text-align: center;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit </h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem ipsa officia, voluptatibus
+                laudantium quis dignissimos aut totam illo numquam, reiciendis, fuga autem nemo cum delectus inventore!
+                Similique atque, beatae magnam animi necessitatibus labore? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minus alias rerum aliquid ad facilis, officia temporibus eum voluptate in consectetur
+                placeat. Reprehenderit qui sunt cupiditate ratione tempora ea minima ipsa, doloribus, laudantium, totam
+                eos!
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer </h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem ipsa officia, voluptatibus
+                laudantium quis dignissimos aut totam illo numquam, reiciendis, fuga autem nemo cum delectus inventore!
+                Similique atque, beatae magnam animi necessitatibus labore? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eos neque totam placeat, animi nemo dicta molestiae repellat incidunt, tempora magnam
+                dolorum quod nobis iste consectetur. Velit soluta, tempora similique labore quidem voluptas sit neque?
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary </h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem ipsa officia, voluptatibus
+                laudantium quis dignissimos aut totam illo numquam, reiciendis, fuga autem nemo cum delectus inventore!
+                Similique atque, beatae magnam animi necessitatibus labore?
+            </p> 
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses </h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem ipsa officia, voluptatibus
+                laudantium quis dignissimos aut totam illo numquam, reiciendis, fuga autem nemo cum delectus inventore!
+                Similique atque, beatae magnam animi necessitatibus labore?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
